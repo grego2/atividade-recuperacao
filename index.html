@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Explicando GitHub</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+        <div class="logo"> 
+            <img src="imagens/logo_github.png" alt="Logo">
+            <h1 class="centralizado">Explicando o GitHub</h1> 
+        </div>
+    </header>
+    <main>
+        <h2>O GitHub é uma plataforma de hospedagem de código-fonte e colaboração baseada em controle de versão usando o Git. O Git é um sistema de controle de versão distribuído, o que significa que permite rastrear mudanças no código ao longo do tempo e facilita o trabalho colaborativo em projetos de software.</h2>
+	<script src="index.js"></script>
+
+        <h1 class="centralizado">Manipulando arquivos</h1>
+            <div class="steps">
+                <li><strong>Configuração inicial</strong></li>
+                    <ul> 1º Instalar o Git no seu computador, se ainda não estiver instalado.</ul>
+                    <ul> 2º Configurar sua identidade localmente no Git usando <code>git config</code>.</ul>     
+                <li><strong>Criar um repositório local</strong></li>       
+                    <ul> Inicializar um novo repositório Git em seu computador usando <code>git init</code> na pasta do seu projeto ou clonar um repositório existente do GitHub usando <code>git clone URL_DO_REPOSITORIO</code>.</ul>   
+                <li><strong>Adicionar e modificar arquivos</strong></li>            
+                    <ul> Quando você cria um novo arquivo, o Git não o rastreia automaticamente; você precisa adicioná-lo usando <code>git add NOME_DO_ARQUIVO ou git add .</code> para adicionar todos os arquivos modificados.</ol>        
+                <li><strong>Commit das alterações</strong></li>            
+                    <ul> 1º Após adicionar os arquivos, você os prepara para serem incluídos no histórico do Git por meio de um "commit".</ul>    
+                    <ul> 2º Use <code>git commit -m "MENSAGEM_DO_COMMIT"</code> para confirmar as alterações com uma mensagem descritiva.</ul>      
+                <li><strong>Enviar para o repositório remoto no GitHub</strong></li>     
+                    <ul> 1º Associe seu repositório local a um repositório remoto no GitHub usando <code>git remote add origin URL_DO_REPOSITORIO</code>.<br>
+                         2º Envie suas alterações para o repositório remoto usando <code>git push origin BRANCH</code>(normalmente main ou master) para enviar os commits para o GitHub.</ul>   
+                <li><strong>Atualizações futuras</strong></li>
+                    <ul>- Se outros colaboradores fizerem alterações no repositório remoto, você pode trazer essas alterações para o seu repositório local usando <code>git pull origin BRANCH</code>.</ul>   
+            </div>
+        </main>        
+    </body>
+
+    <footer class="centralizado">Criado e desenvolvido por Vitor Hugo</footer>
+</html>
